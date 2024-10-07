@@ -21,7 +21,7 @@ public static void main() {
         OutputStream outputStream = socket.getOutputStream();
 
         DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
-        dataOutputStream.write("HTTP/1.1 200 OK\\r\\n\\r\\n".getBytes());
+        dataOutputStream.write("HTTP/1.1 200 OK\r\n\r\n".getBytes());
         dataOutputStream.flush();
         dataOutputStream.close();
 
